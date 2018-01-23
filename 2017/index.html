@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml11.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" href="./default.css" type="text/css" />
+		<link rel="icon" type="image/png" href="ukerdevroom-logo.png"/>
+		<title>Microkernel Devroom and Google Summer of Code 2017</title>
+	</head>
+	<body>
+		<div id="wrapper">
+			<img src="ukerdevroom-logo.svg" height="200px" class="float-right img-border" />
+			
+			<h1>Microkernel Devroom and Google Summer of Code 2017</h1>
+			
+			<blockquote>Google Summer of Code is a global program focused on
+			introducing students to open source software development. Students
+			work on a&nbsp;3&nbsp;month programming project with an open source
+			organization during their break from university. Since its inception
+			in 2005, the program has brought together 12,000+ student participants
+			and 11,000 mentors from over 118 countries worldwide. Google Summer of
+			Code has produced 30,000,000+ lines of code for 568 open source
+			organizations.</blockquote>
+			
+			<p class="right">[... from the <a href="https://summerofcode.withgoogle.com/about/">Google Summer of Code 2017</a> site.]</p>
+			
+			<h2>Microkernel Devroom</h2>
+			
+			<p>We are a&nbsp;confederation of free software and open source projects
+			that promote the ideas of <a href="http://www.microkernel.info/">microkernel-based
+			operating systems</a>. We want to extend our previous cooperation in
+			<a href="https://fosdem.org/">FOSDEM</a>'s
+			<a href="https://fosdem.org/2017/schedule/track/microkernels_and_component_based_os/">Microkernel devroom</a>
+			(that has been organized in turn by one of the open source microkernel
+			projects since 2012) into the realm of Google Summer of Code.</p>
+			
+			<p>Projects participating this year:</p>
+			
+			<ul>
+			<li><a href="#genode">Genode</a>
+			<li><a href="#helenos">HelenOS</a>
+			<li><a href="#hurd">GNU Hurd</a>
+			<li><a href="#minix3">MINIX 3</a>
+			<li><a href="#redox">Redox</a>
+			</ul>
+			
+			<h2>Who Are We Looking for?</h2>
+			
+			<p>We are looking for students with real interest in operating systems
+			(especially microkernel-based operating systems), system-level
+			programming and software design. We are looking for people who will play
+			nicely with our community and by our <a href="./guidelines.html">guidelines</a>.
+			We are looking for those who are willing to give their project the
+			necessary time and care. If a&nbsp;student only wants to pass Google
+			Summer of Code with the minimum effort, our organization is not
+			a&nbsp;good match for him or her. We are looking for already
+			experienced coders (although specific experience with microkernel-based
+			operating systems is not necessary) because most of our projects start at
+			the medium difficulty level and the code itself is not trivial. The successful
+			candidate should be a good communicator, too.</p>
+			
+			<p>We would like to invite prospective students to demonstrate their
+			abilities and determination to work on a&nbsp;microkernel-based
+			operating system during the Google Summer of Code 2017 by completing
+			a&nbsp;simple task before the student application deadline on April 3rd
+			2017. The student should check out the sources of a&nbsp;microkernel-based
+			operating system represented by our organization (see the list below),
+			build the system, then either pick an existing bug or enhancement or
+			think of their own improvement, implement it, test it and submit the
+			patch to the developers. Note that the exact means of submitting the
+			patch differs from one project to another. Do not hesitate to introduce
+			yourself and your intentions to the core developers of the given
+			microkernel-based operating system and ask for initial guidance (see the
+			links below).</p>
+			
+			<p>Students interested in applying for a&nbsp;Google Summer of Code
+			project also need to fill out the <a href="./form.html">application
+			form</a> and attach it to their application.</p>
+			
+			<p>If a&nbsp;student is accepted, he or she will be invited to
+			participate in the community of the given microkernel-based operating
+			system project from day one. The community will also ask him or her to
+			periodically document his or her progress via email write-ups and/or blog
+			entries. The mentor will act as a&nbsp;buddy in the core development team
+			who will monitor the development and provide the student with guidance
+			when necessary. However, as a first-class member of the development community
+			the student will also receive feedback from other developers besides the
+			designated mentor.</p>
+			
+			<h2>Ideas List</h2>
+			
+			<p>The project ideas for the Google Summer of Code in the context of the
+			Microkernel devroom are divided primarily by the microkernel-based operating
+			system the student wants to contribute to. The ideas can be characterized as
+			things that will improve the usability of the given microkernel-based operating
+			system while building on the functionality already present in the code base.
+			No project in the list poses an open-questions topic in the academic sense.
+			Instead, each project is rather implementation-oriented. We expect the students
+			to deliver code that could be seamlessly integrated with the existing
+			code base. However, note that the extent of some of the ideas listed below
+			needs to be scaled down (e.g. implementing only the essential parts)
+			in order to be achievable in one trimester.</p>
+			
+			<p>Note that contributing to a&nbsp;microkernel-based operating system does
+			<strong>not</strong> have to involve kernel programming. In
+			a&nbsp;microkernel-based operating system, most of the features involve
+			work on the user space parts of the system, such as libraries and server
+			tasks. Having said that, we do not object pure kernel projects either.</p>
+			
+			<p>The Ideas List should be understood just as a&nbsp;small subset of all
+			possible topics. If you do not see an appealing topic on this list, you
+			might want to consider talking to the core developers of the given
+			microkernel-based operating system about your own ideas. Remember that the
+			ideas are not set in stone and, after all, it is the student who is going
+			to propose the project to the core developers.</p>
+			
+			<h3 id="genode"><a href="http://genode.org/">Genode</a></h3>
+			
+			<p>Genode is a&nbsp;tool kit for building highly secure special-purpose
+			operating systems. It scales from embedded systems with as little as
+			4&nbsp;MB of memory to highly dynamic general-purpose workloads.</p>
+			
+			<p>For a&nbsp;more detailed description of the ideas please consult the
+			<a href="http://genode.org/about/challenges">Future Challenges</a> page
+			and/or contact the <a href="http://genode.org/community/index">Genode
+			community</a>.</p>
+			
+			<ul>
+				<li><a href="http://genode.org/about/challenges#Applications_and_library_infrastructure"><strong>Applications and library infrastructure</strong></a>
+					<ul>
+						<li>GNU Privacy Guard</li>
+						<li>VNC server implementing Genode's framebuffer session interface</li>
+						<li>Interfacing with the SAFE network</li>
+						<li>Tiled window manager</li>
+						<li>Interactive sound switchbox based on Genode's Audio_out session interface</li>
+						<li>Graphical on-target IPC tracing tool using Qt</li>
+						<li>Ports of popular software</li>
+					</ul></li>
+				<li><a href="http://genode.org/about/challenges#Application_frameworks_and_runtime_environments"><strong>Application frameworks and runtime environments</strong></a>
+					<ul>
+						<li>OpenJDK</li>
+						<li>Android's ART VM natively on Genode</li>
+						<li>Rust bindings for the Genode API</li>
+						<li>Go language runtime</li>
+						<li>Combination of CAmkES with Genode</li>
+						<li>Runtime for the D programming language</li>
+						<li>Using Haskell as systems-development language</li>
+					</ul></li>
+				<li><a href="http://genode.org/about/challenges#Virtualization"><strong>Virtualization</strong></a>
+					<ul>
+						<li>VirtualBox on top on KVM on Linux</li>
+						<li>VirtualBox on top on seL4</li>
+						<li>Xen as kernel for Genode</li>
+						<li>Genode as virtualization layer for Qubes OS</li>
+						<li>QEMU</li>
+					</ul></li>
+				<li><a href="http://genode.org/about/challenges#Device_drivers"><strong>Device drivers</strong></a>
+					<ul>
+						<li>Isochronous USB devices</li>
+						<li>Sound on the Raspberry Pi</li>
+						<li>Framebuffer for UEFI and Coreboot</li>
+						<li>Data Plane Development Kit (DPDK)</li>
+					</ul></li>
+				<li><a href="http://genode.org/about/challenges#Platforms"><strong>Platforms</strong></a>
+					<ul>
+						<li>Microkernelizing Linux</li>
+						<li>Support for the HelenOS/SPARTAN kernel</li>
+						<li>Support for the XNU kernel (Darwin)</li>
+						<li>Linux process containers for supporting Genode's resource trading</li>
+					</ul></li>
+				<li><a href="http://genode.org/about/challenges#Optimizations"><strong>Optimizations</strong></a>
+					<ul>
+						<li>Low-latency audio streaming</li>
+						<li>De-privileging the VESA graphics driver</li>
+					</ul></li>
+			</ul>
+			
+			<h3 id="helenos"><a href="http://www.helenos.org/">HelenOS</a></h3>
+			
+			<p>HelenOS is a&nbsp;portable microkernel-based multiserver operating
+			system designed and implemented from scratch. It decomposes key operating
+			system functionality such as file systems, networking, device drivers and
+			graphical user interface into a&nbsp;collection of fine-grained user space
+			components that interact with each other via message passing.</p>
+			
+			<p>HelenOS maintains its own <a href="http://www.helenos.org/gsoc2017">GSoC page</a>.
+						
+			
+			<h3 id="hurd"><a href="https://www.gnu.org/software/hurd/">GNU Hurd</a></h3>
+			
+			<p>The GNU Hurd is the GNU project's replacement for the Unix kernel.
+			It is a collection of servers that run on the Mach microkernel to implement
+			file systems, network protocols, file access control, and other features that
+			are implemented by the Unix kernel or similar kernels (such as Linux).</p>
+			
+			<p>The Hurd project maintains its GSoC ideas in a
+			<a href="http://darnassus.sceen.net/~hurd-web/community/gsoc/project_ideas/">separate
+			page</a>. Contact <a href="mailto:bug-hurd@gnu.org">bug-hurd@gnu.org</a> for more information.</p>
+			
+			<h3 id="minix3"><a href="http://www.minix3.org/">MINIX 3</a></h3>
+			
+			<p>MINIX&nbsp;3 is a&nbsp;free, open-source, operating system designed to
+			be highly reliable, flexible, and secure. It is based on a tiny microkernel
+			running in kernel mode with the rest of the operating system running as
+			a&nbsp;number of isolated, protected, processes in user mode.</p>
+			
+			<p>MINIX 3 maintains its own <a href="http://wiki.minix3.org/doku.php?id=soc:2017:start">ideas page</a>.
+			Please contact the <a href="http://wiki.minix3.org/doku.php?id=howtocontribute">MINIX 3 community</a>
+			for more information.</p>
+			
+			<h3 id="redox"><a href="https://www.redox-os.org/">Redox</a></h3>
+			
+			<p>Redox is a&nbsp;Unix-like operating system written in Rust, aiming
+			to bring the innovations of Rust to a&nbsp;modern microkernel and full
+			set of applications. Redox isn't afraid of dropping the bad parts of
+			POSIX, while preserving modest Linux API compatibility.</p>
+			
+			<p>For a&nbsp;more detailed description of the ideas please contact
+			the <a href="https://github.com/redox-os/redox/blob/master/CONTRIBUTING.md">Redox
+			community</a>.</p>
+			
+			<ul>
+				<li>Building Redox on Redox</li>
+				<li>Get rid of SYS_PIPE2 (and possibly other syscalls)</li>
+				<li>Automated unit &amp; integration tests</li>
+				<li>Move scheme management out of the kernel</li>
+				<li>Move option processing from utilities to scheme implementations</li>
+			</ul>
+			
+			
+		</div>
+	</body>
+</html>

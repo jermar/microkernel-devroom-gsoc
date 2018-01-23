@@ -1,0 +1,76 @@
+html {
+	height: 100%;
+	overflow-y: initial;
+}
+
+body {
+	color: #000;
+	margin: 10px;
+	padding: 10px;
+	font: normal 13px Verdana, Arial, 'Bitstream Vera Sans', Helvetica, sans-serif;
+	height: 100%;
+	background: #606060;
+	background: -webkit-linear-gradient(#606060, #7f7f7f);
+	background: -o-linear-gradient(#606060, #7f7f7f);
+	background: -moz-linear-gradient(#606060, #7f7f7f);
+	background: linear-gradient(#606060, #7f7f7f);
+	background-attachment: fixed;
+}
+
+h1 {
+	font-size: 30px;
+	margin: .15em 1em 0.5em 0;
+}
+
+h2 {
+	font-size: 16px;
+}
+
+h3 {
+	font-size: 14px;
+}
+
+p {
+	text-align: justify;
+}
+
+blockquote {
+	font-style: italic;
+	text-align: justify;
+}
+
+li {
+	margin-top: 0.2em;
+	padding-bottom: 0.3em;
+	text-align: justify;
+}
+
+#wrapper {
+	background: #ffffff;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	min-width: 740px;
+	max-width: 1220px;
+	min-height: 100%;
+	-moz-box-shadow: 0px 0px 14px #333;
+	-webkit-box-shadow: 0px 0px 14px #333;
+	box-shadow: 0px 0px 14px #333;
+}
+
+.right {
+	text-align: right;
+}
+
+.float-right {
+	float: right;
+}
+
+.img-border {
+	padding: 20px;
+}
+
+:visited {
+	color: #910;
+}

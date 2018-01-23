@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Microkernel Devroom and Google Summer of Code 2018</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" href="styles.css"/>
+		<link rel="icon" type="image/png" href="ukerdevroom-logo.png"/>
+	</head>
+	<body>
+		<div class="wrapper">
+		<img src="ukerdevroom-logo.svg"/>
+		  <div class="logotext">
+			<h1>Microkernel Devroom</h1>
+		  </div>
+			
+		  <div class="intro">
+			<blockquote>Google Summer of Code is a global program focused on
+			introducing students to open source software development. Students
+			work on a&nbsp;3&nbsp;month programming project with an open source
+			organization during their break from university. Since its inception
+			in 2005, the program has brought together 13,000+ student participants
+			and 12,000 mentors from over 125 countries worldwide. Google Summer of
+			Code has produced 33,000,000+ lines of code for 608 open source
+			organizations.</blockquote>
+			
+			<p class="right">[... from the <a href="https://summerofcode.withgoogle.com/about/">Google Summer of Code 2018</a> site.]</p>
+		  </div>
+
+		  <div class="separator"></div>
+
+		  <div class="main">
+			
+			<h2>Welcome!</h2>
+			
+			<p>We are a&nbsp;confederation of free software and open source projects
+			that promote the ideas of <a href="http://www.microkernel.info/">microkernel-based
+			operating systems</a>. <a href="/2017">Last year</a> we successfully extended our previous cooperation from
+			<a href="https://fosdem.org/">FOSDEM</a>'s
+			<a href="https://fosdem.org/2018/schedule/track/microkernels/">Microkernel devroom</a>
+			into the realm of Google Summer of Code.</p>
+			
+			<p>So far, the following projects have signed up for this year:</p>
+			
+			<ul>
+			<li><a href="#helenos">HelenOS</a>
+			<li><a href="#l4re">L4Re</a>
+			<li><a href="#minix3">MINIX 3</a>
+			<li><a href="#redox">Redox</a>
+			</ul>
+			
+			<h2>Who Are We Looking for?</h2>
+			
+			<p>
+			We are looking for <a href="https://summerofcode.withgoogle.com/rules/">eligible students</a>
+			with genuine interest in operating systems (especially microkernel-based operating systems),
+			system-level programming and software design. If you recognize yourself in that description,
+			here are some <a href="./guidelines.html">guidelines</a> to follow when interacting with our
+			communities and working on our project ideas.</p>
+			
+			<p>We would like to invite prospective students to demonstrate their
+			abilities and determination to work on a&nbsp;microkernel-based
+			operating system during the Google Summer of Code 2018 by completing
+			a&nbsp;small programming task before the student application deadline
+			on April 23rd 2018. The students should check with the individual projects
+			for their specific requirements.</p>
+			
+			<p>Students interested in applying for a&nbsp;Google Summer of Code
+			project also need to fill out the <a href="./form.html">application
+			form</a> and attach it to their application. Without this form,
+			the application cannot considered.</p>
+			
+			<h2>Ideas List</h2>
+			
+			<p>The project ideas for the Google Summer of Code in the context of the
+			Microkernel devroom are divided primarily by the microkernel-based operating
+			system the student wants to contribute to. Here we provide just a summary
+			of ideas for each project and link to each project's Ideas page which contains
+			more details.</p>
+			
+			<p>The Ideas List should be understood just as a&nbsp;small subset of all
+			possible topics. If you do not see an appealing topic on this list, you
+			might want to consider talking to the core developers of the given
+			microkernel-based operating system about your own ideas. Remember that the
+			ideas are not set in stone and, after all, it is the student who is going
+			to propose the project to the core developers.</p>
+			
+			<h3 id="helenos">HelenOS</h3>
+			<p class="links">
+			Home: <a href="http://www.helenos.org/">www.helenos.org</a>
+			Ideas page: <a href="http://www.helenos.org/gsoc2018">www.helenos.org/gsoc2018</a>
+			</p>
+			
+			<p>HelenOS is a&nbsp;portable microkernel-based multiserver operating
+			system designed and implemented from scratch. It decomposes key operating
+			system functionality such as file systems, networking, device drivers and
+			graphical user interface into a&nbsp;collection of fine-grained user space
+			components that interact with each other via message passing.</p>
+			
+			<p>Summary of project ideas:
+			<ul>
+			  <li>Userspace device drivers development
+			    <ul>
+			      <li><a href="http://www.helenos.org/ticket/674">Implement virtio-net driver</a>
+			      <li><a href="http://www.helenos.org/ticket/675">Implement Xen PV network device driver</a>
+			      <li><a href="http://www.helenos.org/ticket/621">Raspberry Pi USB controller driver</a>
+			      <li><a href="http://www.helenos.org/ticket/647">USB support on BeagleBoard XM and BeagleBone computers</a>
+			      <li><a href="http://www.helenos.org/ticket/572">USB DisplayLink driver</a>
+			      <li><a href="http://www.helenos.org/ticket/571">Driver for Broadcom VideoCore IV (Raspberry Pi)</a>
+			      <li><a href="http://www.helenos.org/ticket/577">AC'97 Audio driver</a>
+			    </ul>
+			  <li>Kernel programming and platform support
+			    <ul>
+			      <li><a href="http://www.helenos.org/ticket/11">Support PAE on ia32</a>
+			      <li><a href="http://www.helenos.org/ticket/649">Implement support for Creator Ci40 (mips32)</a>
+			    </ul>
+			  <li>Improving support for debugging and observability
+			    <ul>
+			      <li><a href="http://www.helenos.org/ticket/310">Support for DWARF Debugging Information Format</a>
+			      <li><a href="http://www.helenos.org/ticket/646">GDB stub for remote debugging</a>
+			    </ul>
+			  <li>Improving user experience, GUI
+			    <ul>
+			      <li><a href="http://www.helenos.org/ticket/652">Graphics stack (GUI) improvements</a>
+			      <li><a href="http://www.helenos.org/ticket/719">Terminal resizing and scrolling</a>
+			    </ul>
+			  <li>Libraries and tooling
+			    <ul>
+			      <li><a href="http://www.helenos.org/ticket/648">Extend dynamic linking support to (an)other architecture(s)</a>
+			      <li><a href="http://www.helenos.org/ticket/424">RPC/IPC generator</a>
+			    </ul>
+			  <li>Porting of third-party components to HelenOS
+			    <ul>
+			      <li><a href="http://www.helenos.org/ticket/712">Port Git to HelenOS</a>
+			    </ul>
+			</ul>
+			</p>
+			
+
+			<h3 id="l4re"><a href="https://l4re.org/">L4Re</a></h3>
+			<p class="links">
+			Home: <a href="https://l4re.org/">l4re.org</a>
+			Ideas page: <a href="https://gsoc.l4re.org">gsoc.l4re.org</a>
+			</p>
+			
+			<p>
+			The L4Re Runtime Environment is an operating system framework for building
+			systems with real-time, security, safety and virtualization requirements.
+			It consists of the L4Re hypervisor/kernel and a user-level infrastructure
+			that includes basic services such as program loading and memory management.
+			L4Re also provides the environment for applications, including libraries
+			and process local functionality.
+			</p>
+			
+			<p>Summary of project ideas:
+			<ul>
+			  <li><a href="https://gsoc.l4re.org/#benchmark">Benchmark suite for L4Re</a>
+			  <li><a href="https://gsoc.l4re.org/#nestedvirt">Nested virtualization with uvmm on x86</a>
+			  <li><a href="https://gsoc.l4re.org/#riscv">Port Fiasco.OC/L4Re to RISC-V</a>
+			  <li><a href="https://gsoc.l4re.org/#fuzzing">Library fuzzing</a>
+			</ul>
+			</p>
+
+			<h3 id="minix3">MINIX&nbsp;3</h3>
+			<p class="links">
+			Home: <a href="http://www.minix3.org/">www.minix3.org</a>
+			Ideas page: <a href="http://wiki.minix3.org/doku.php?id=soc:2018:start">http://wiki.minix3.org/doku.php?id=soc:2018:start</a>
+			</p>
+			
+			<p>MINIX&nbsp;3 is a&nbsp;free, open-source, operating system designed to
+			be highly reliable, flexible, and secure. It is based on a tiny microkernel
+			running in kernel mode with the rest of the operating system running as
+			a&nbsp;number of isolated, protected, processes in user mode.</p>
+			
+			<p>Summary of project ideas:
+			<ul>
+			  <li><a href="http://wiki.minix3.org/doku.php?id=soc:2018:start#projectintel_64bit_support">Project: Intel 64bit Support</a>
+			  <li><a href="http://wiki.minix3.org/doku.php?id=soc:2018:start#projectrump">Project: rump</a>
+			</ul>
+			</p>
+			
+			<h3 id="redox">Redox</h3>
+			<p class="links">
+			Home: <a href="https://www.redox-os.org/">www.redox-os.org</a>
+			</p>
+			
+			<p>Redox is a&nbsp;Unix-like operating system written in Rust, aiming
+			to bring the innovations of Rust to a&nbsp;modern microkernel and full
+			set of applications. Redox isn't afraid of dropping the bad parts of
+			POSIX, while preserving modest Linux API compatibility.</p>
+			
+		  </div>
+		</div>
+	</body>
+</html>
